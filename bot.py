@@ -4,6 +4,9 @@ from telegram.ext import (
     ApplicationBuilder, MessageHandler, CommandHandler,
     CallbackQueryHandler, ContextTypes, filters
 )
+from keep_alive import keep_alive
+
+keep_alive()
 
 # تنظیم لاگ‌ها
 logging.basicConfig(level=logging.INFO)
